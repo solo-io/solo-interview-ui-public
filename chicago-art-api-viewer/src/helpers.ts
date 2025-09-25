@@ -164,3 +164,7 @@ export const buildArtworkImageUrl = (
 ) => {
   return `${artworksResponse.config.iiif_url}/${artworkId}/full/843,/0/default.jpg`;
 };
+
+export const buildArtworkDetailsUrl = (artworkId: string) => {
+  return `${apiEndpoint.artworks}/${artworkId}`;
+};
